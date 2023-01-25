@@ -7,15 +7,16 @@
     text-decoration: none;
     list-style: none;
     scroll-behavior: smooth;
+
 }
 
 :root {
-    --main-background: black;
+    --main-background: #1F2020;
     --secondary-background: #00337C;
     --tertiary-background: #1C82AD;
     --cuaternary-background: ##16A085;
     --quintern-background: white;
-    --font-color-primary: black;
+    --font-color-primary: #797E7E;
     --font-color-secondary: white;
     --font-color-tertiary: #76D7C4;
     --big-font: 5rem;
@@ -26,7 +27,12 @@
 
 .logo {
     width: 200px;
-    height: auto
+    height: auto;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: left;
 }
 
 /* FROM MOBILE STYLES */
@@ -55,6 +61,36 @@ header {
     padding: 10px;
     width: 100%; 
 }
+
+.navlist {
+    display: flex;
+}
+
+.navlist a{
+    color: #797E7E;
+    font-size: 17px;
+    font-weight: 500;
+    margin: 0 10px;
+    transition: all .45s ease
+}
+
+.navlist a:hover{
+    color: var(--font-color-secondary);
+}
+
+.navlist a.active{
+    color: #76D7C4;
+}
+
+.bx-menu{
+    color: #797E7E;
+}
+
+.bx-menu {
+    hover color: #76D7C4;
+}
+
+
 
 /*background-image: url(images/zyro-image.png);
     background-size: cover;
