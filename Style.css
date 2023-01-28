@@ -16,9 +16,10 @@
     --tertiary-background: #1C82AD;
     --cuaternary-background: ##16A085;
     --quintern-background: white;
-    --font-color-primary: #797E7E;
+    --sixtern-background: #0c0033;
+    --font-color-primary: #BAC2C2;
     --font-color-secondary: white;
-    --font-color-tertiary: #76D7C4;
+    --font-color-tertiary: #90ead8;
     --big-font: 5rem;
     --h2-font: 3rem;
     --p-font: 1.1rem;
@@ -37,14 +38,15 @@
 
 /* FROM MOBILE STYLES */
 
-body {
-    background-color: var(--main-background);
+body{
+    background-color: var(--primary-background);
+    color: var(--font-color-primary);
 }
 
-
-header {
+.header {
+    position: fixed;
     width: 100%;
-    height: 100vh;
+    height: auto;
     top: 0;
     right: 0;
     z-index: 1000;
@@ -67,11 +69,12 @@ header {
 }
 
 .navlist a{
-    color: #797E7E;
+    color: var(--font-color-primary);
     font-size: 17px;
     font-weight: 500;
-    margin: 0 10px;
-    transition: all .45s ease
+    margin: 0 25px;
+    transition: all .45s ease;
+    display: flex;
 }
 
 .navlist a:hover{
@@ -79,16 +82,83 @@ header {
 }
 
 .navlist a.active{
-    color: #76D7C4;
+    color: var(--font-color-tertiary);
+    font-weight: bold;
+    font-size: 18px;
 }
 
-.bx-menu{
-    color: #797E7E;
+#menu-icon{
+    font-size: 35PX;
+    color: var(--font-color-primary);
+    z-index: 10001;
+    cursor: pointer;
+    margin-left: 25px;
+    display: none;
+}   
+
+#menu-icon {
+    color: var(--font-color-tertiary);
 }
 
-.bx-menu {
-    hover color: #76D7C4;
+section{
+    padding: 160px 15% 120px;
+    color: var(--font-color-secondary);
 }
+
+.home{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-image: url(images/Fondo-Web-4.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.slide {
+    margin-bottom: 20px;
+}
+
+.one{
+    display: inline-block;
+    margin-right: 15px;
+    height: 32px;
+    padding:0 15px;
+    line-height: 32px;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 5px;
+    background: var(--sixtern-background);
+    opacity: .75;
+}
+
+.two {
+    display: inline-block;
+    color: var(--font-color-secondary);
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.home-text h1{
+    font-size: var(--big-font);
+    font-weight: 700;
+    color: var(--font-color-secondary);
+    text-shadow: var(--tertiary-background) 0.01em 0.05em 0.08em;
+    list-style: 1.1;
+    margin: 0 0 30;
+}
+
+.home-text h3{
+    color: var(--font-color-secondary);
+    margin: 0 0 35px;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+
 
 
 
