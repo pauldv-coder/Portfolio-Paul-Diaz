@@ -17,12 +17,13 @@
     --cuaternary-background: ##16A085;
     --quintern-background: white;
     --sixtern-background: #0c0033;
-    --font-color-primary: #BAC2C2;
+    --font-color-primary: #9ba8a8;
     --font-color-secondary: white;
-    --font-color-tertiary: #90ead8;
+    --font-color-tertiary: #42f1a8;
     --big-font: 5rem;
     --h2-font: 3rem;
     --p-font: 1.1rem;
+    --h3-font: 1.1rem;
 
 }
 
@@ -59,26 +60,29 @@ body{
     transition: all .45s ease;
 }
 
-.container {
-    padding: 10px;
-    width: 100%; 
-}
-
 .navlist {
     display: flex;
+    align-items: block;
 }
 
 .navlist a{
-    color: var(--font-color-primary);
+    color: var(--font-color-secondary);
     font-size: 17px;
     font-weight: 500;
-    margin: 0 25px;
+    margin: 10px 25px;
     transition: all .45s ease;
     display: flex;
+    text-align: center;
+    z-index: 1002;
+    position: relative;
 }
 
 .navlist a:hover{
     color: var(--font-color-secondary);
+    text-decoration-line: underline overline;
+    text-underline-offset: 8px;
+
+
 }
 
 .navlist a.active{
@@ -87,13 +91,24 @@ body{
     font-size: 18px;
 }
 
+.bar {
+    height: 115px;
+    width: 1600px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 998;
+    margin-bottom: 10px;
+    filter: drop-shadow(-2px 2px 15px rgba(0, 0, 0, 0.7));
+}
+
 #menu-icon{
     font-size: 35PX;
     color: var(--font-color-primary);
-    z-index: 10001;
+    z-index: 1001;
     cursor: pointer;
-    margin-left: 25px;
-    display: none;
+    margin-left: 35px;
+    display: flexbox;
 }   
 
 #menu-icon {
@@ -106,19 +121,21 @@ section{
 }
 
 .home{
+    margin-top: 30px;
     position: relative;
+    display: flex;
     height: 100vh;
     width: 100%;
-    background-image: url(images/Fondo-Web-4.jpg);
+    max-width: 2400px;
+    background-image: url(images/Fondo_Paul.jpg);
     background-size: cover;
     background-position: center;
-    display: flex;
     align-items: center;
-    justify-content: flex-start;
-}
+}       
 
 .slide {
-    margin-bottom: 20px;
+    margin: 0 0 5 0;
+    font-size: 1rem;
 }
 
 .one{
@@ -145,23 +162,51 @@ section{
     font-size: var(--big-font);
     font-weight: 700;
     color: var(--font-color-secondary);
-    text-shadow: var(--tertiary-background) 0.01em 0.05em 0.08em;
+    text-shadow: var(--secondary-background) 0.01em 0.05em 0.8em;
     list-style: 1.1;
-    margin: 0 0 30;
+    margin: 0 0 0;
 }
 
 .home-text h3{
     color: var(--font-color-secondary);
     margin: 0 0 35px;
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 700;
     line-height: 1.1;
 }
 
+.Photo {
+    width: 100%;
+    max-width: 460px;
+    margin: 0 0 0 0;
+    filter: drop-shadow(-2px 2px 15px rgba(0, 0, 0, 0.7));
+    padding-top: 60px;
+}
 
 
+.biography {
+    display: block;
+    position: flex;
+    height: 15vh;
+    width: 100%;
+}
 
+.tittle{
+    color: var(--sixtern-background);
+    margin-top: 0;
+}
 
-/*background-image: url(images/zyro-image.png);
-    background-size: cover;
-    background-position: center; */
+.description {
+    color: var(--main-background);
+    position: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: left;
+    justify-content: right;
+    text-align: left;
+}
+
+.contact {
+    color: var(--sixtern-background);
+    margin: 0 0 35px;
+}

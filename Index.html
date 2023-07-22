@@ -1,51 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
+    
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--========== SHORTCUT-ICON =============---->
+    
     <title>Paul Diaz Portfolio</title>
     <link rel="shortcut icon" href="images/Icon_Paul.ico"></rel>
+
+    <!--========== CSS =============---->
+
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet"
     href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
-</head>
+    
+    <!--========== JS =============---->
+    
+    <script type="text/javascript" src="Script.js"></script>   
+
+
+</head> 
+
+
 <body>
     <!--header---->
     <header class="header">
+        
+        <img class="bar" src="images/Capa 71.png"> <!--//imagen principal-->
+        <div class="bar_nav"></div>
+            <img class ="logo"  src="images/Paul_Diaz_Logo-White.png">
+                <div class="bx bx-menu" id="menu-icon">
+                <a href="../pages/index.html"></a>
+                </div>
+            <ul class="navlist">
+                <li><a href="Index.html" class="active"> Home </a></li>
+                <li><a href="../pages/About-me.html"> About me </a></li>
+                <li><a href="../pages/Projects-Done.html"> Projects </a></li>
+                <li><a href="../Pages/Services.html"> Services </a></li>
+                <li><a href="../Pages/Contact-me.html"> Contact </a></li>
+            </ul>
             
-        <img class ="logo" src="images/Paul_Diaz_Logo-White.png">
         
-        <ul class="navlist">
-            <li><a href="Home" class="active"> Home </a></li>
-            <li><a href="pages/About me.html"> About me </a></li>
-            <li><a href="Projects Done"> Projects Done </a></li>
-            <li><a href="Services"> Services </a></li>
-            <li><a href="Contact me"> Contact me </a></li>
-        </ul>
-        
-        <div class="bx bx-menu" id="menu-icon"></div>
-                    
-        <script type="text/javascript" src="Script.js"></script>
-        
-    </header>
 
-    <!--Home-->
+    </header> <!--End Header-->
+
+    <!---Main----->
 
     <Section class="home" id="home">
+
         <div class="home-text">
+
             <div class="slide">
                 <span class="one">Hello</span>
                 <span class="two">I'm</span>
             </div>
-            <h1>Paul Diaz</h1>
+            <h1>Paul Díaz</h1>
             <h3>Full Stack <span> Developer </span></h3>
-            <p>Web developer with knowledge and skills in UX / UI <br> and project management with customer focus</p>
+            </div>
+        <img class="Photo" src="../images/Paul.png"> 
+
+    </Section> <!--End Main-->
+
+    <!--Bio---->
+    <section class="biography" id="biography">
+
+        <h1 class="tittle">About me</h1> 
+        <p class="description" id="description"> Admon de empresas con cinco (5) años de experiencia en gestión de proyectos, implementación de metodologías ágiles, análisis y mejoramiento de procesos. 
+            Especializado en Gerencia de Proyectos y con logros en el mejoramiento de procesos y culminación satisfactoria de los Proyectos a cargo. 
+            Graduado en la Universidad Piloto de Colombia y en proceso de formación como Profesional en Programación Fullstack en el Massachusetts Institute of Technology - MTI.</p>
+
+        <div class="contact">
+            <a href="https://www.linkedin.com/in/paul-d%C3%ADazv">
+                <span class='bx-fw bx bxl-linkedin-square' id="linkedin">  / pauldiazv </span></a>
+            <a href="https://github.com/pauldv-coder">
+                <span class='bx-fw bx bxl-gith' id="github"> / pauldv-coder </span></a>
         </div>
-        
-    </Section>
+
+    </section>
+    
+
+    <section class="Video" id="video">
+
+    </section>
 </body>
+<footer>
+    <p>todos los derechos reservados</p>
+</footer>
 </html>
