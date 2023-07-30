@@ -14,42 +14,43 @@
     <!--========== CSS =============---->
 
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet"
-    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
     
     <!--========== JS =============---->
     
-    <script type="text/javascript" src="Script.js"></script>   
+    <script type="text/javascript" src="JS/Script.js"></script> 
 
 
 </head> 
 
 <body>
+    
     <!--header---->
     <header class="header">
         
-        <img class="bar" src="images/Capa 71.png"> <!--//imagen principal-->
-        <div class="bar_nav"></div>
-            <img class ="logo"  src="images/Paul_Diaz_Logo-White.png">
-                <!--<div class="bx bx-menu" id="menu-icon">
-                <a href="../pages/index.html"></a>
-                </div><!-->
-            <ul class="navlist">
-                <li><a href="Index.html" class="active"> Home </a></li>
-                <li><a href="../pages/About-me.html"> About me </a></li>
-                <li><a href="../pages/Projects-Done.html"> Projects </a></li>
-                <li><a href="../Pages/Services.html"> Services </a></li>
-                <li><a href="../Pages/Contact-me.html"> Contact </a></li>
-            </ul>
-            
-        
+        <img class ="logo"  src="images/Paul_Diaz_Logo-White.png">
+        <button class="menu" id="menu" type="button"><i class="bi bi-list"></i></button>
+        <nav class="nav" id="nav">
+            <button class="close" id="close" type="button">close</button>
+                <ul class="navlist">
+                    <li><a href="Index.html" class="active"> Home </a></li>
+                    <li><a href="../pages/About-me.html"> About me </a></li>
+                    <li><a href="../pages/Projects-Done.html"> Projects </a></li>
+                    <li><a href="../Pages/Services.html"> Services </a></li>
+                    <li><a href="../Pages/Contact-me.html"> Contact </a></li>
+                </ul>
+        </nav>
+                
 
-    </header> <!--End Header-->
+    </header> 
+    
+    <!--End Header-->
 
 
+    <!--Main-->
 
     <Section class="home" id="home">
         <div class="home-text">
@@ -60,14 +61,16 @@
                <h1>Paul Díaz</h1>
                <h3>Full Stack <span> Developer </span></h3>
             <div class="contact">
-                <a href="https://www.linkedin.com/in/paul-d%C3%ADazv">
-                    <p class='bx-fw bx bxl-linkedin-square' id="linkedin">  / pauldiazv </p></a>
-                <a href="https://github.com/pauldv-coder">
-                    <p class='bx-fw bx bxl-github' id="github"> / pauldv-coder </p></a>  
+                <a href="https://www.linkedin.com/in/paul-d%C3%ADazv" target="_blank">
+                    <p> <i class="bi bi-linkedin"></i> / pauldiazv </p></a>
+                <a href="https://github.com/pauldv-coder" target="_blank">
+                    <p><i class="bi bi-github"></i> / pauldv-coder </p></a>  
             </div>
         </div>
         <img class="Photo" src="../images/Paul.png"> 
-    </Section> <!--End Main-->
+    </Section> 
+    
+    <!--End Main-->
 
     <!--Bio---->
     <section class="biography" id="biography">
@@ -83,7 +86,11 @@
     <section class="Video" id="video">
 
     </section>
+
+
 </body>
+
+
 <footer>
     <p>todos los derechos reservados</p>
 </footer>
