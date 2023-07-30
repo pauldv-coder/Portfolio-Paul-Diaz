@@ -3,10 +3,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family:'Poppins', sans-serif;
     text-decoration: none;
     list-style: none;
     scroll-behavior: smooth;
+    font-family: var(--poppins);
 
 }
 
@@ -24,7 +24,7 @@
     --h2-font: 3rem;
     --p-font: 1.1rem;
     --h3-font: 1.1rem;
-
+    --poppins: 'Poppins', sans-serif;
 }
 
 .logo {
@@ -32,6 +32,7 @@
     height: auto;
     top: 0;
     right: 0;
+    left: -5;
     z-index: 1000;
     display: flex;
     align-items: left;
@@ -93,7 +94,7 @@ body{
 
 .bar {
     height: 115px;
-    width: 1600px;
+    width: 100%;
     position: absolute;
     left: 0;
     top: 0;
@@ -130,6 +131,7 @@ section{
     background-size: cover;
     background-position: center;
     align-items: center;
+    gap: 20%;
 }       
 
 .slide {
@@ -158,7 +160,7 @@ section{
 }
 
 .home-text {
-    width: 70%;
+    width: 100%;
 }
 
 .home-text h1{
@@ -188,12 +190,13 @@ section{
 
 
 .biography {
+    margin-top: 0;
     display: flex;
     flex-direction: row;
     position: relative;
     width: 100%;
-    height: 50px;
-    padding: 80;
+    height: 300px;
+    padding: 120px;
     gap: 20px;
 }
 
@@ -207,18 +210,19 @@ section{
 .description {
     color: var(--main-background);
     width: 70%;
+    height: 100%;
     position:relative;
-    align-items: left;
-    justify-content: right;
     text-align: justify;
 }
 
 .contact {
-    color: var(--sixtern-background);
-    position: relative;
+    color: var(--quintern-background);
     display: flex;
     flex-direction: row;
-    padding: 80;
+    padding: 0px;
+    margin: 10px;
+    gap: 100px;
+    box-sizing: ;
 }
 
 .Video{
@@ -230,5 +234,5 @@ section{
     width: 100%;
     max-width: 2400px;
     align-items: center;
-    gap: 200px;
+    padding: 300px;
 }
