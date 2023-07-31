@@ -53,6 +53,7 @@
     padding: 1rem 15%;
     border-bottom: 1px;
     transition: all .45s ease;
+    gap: 10%;
 }
 
 
@@ -95,22 +96,31 @@
 
 
 @media screen and (max-width:950px) {
-   .Photo, .logo{
+   .Photo{
     display: none;
    }
 
-    .menu {
+   .header{
+    background-color: var(--main-background);
+   }
+
+   .logo{
+    opacity: 1;
+   }
+
+    .menu, .close{
         display:block;
         flex-direction: column;
-        align-items:end;
-        background-color: var(--font-color-tertiary);
+        align-items: column;
+        color: var(--font-color-secondary);
+        background-color: transparent;
+        font-size: 2rem;
+        border: 0;
     }
     
-
     .nav{
         opacity: 0;
         visibility: hidden;
-
         display: flex;
         flex-direction: column;
         align-items: end;
@@ -120,7 +130,7 @@
         right: 0;
         bottom: 0;
         background-color: var(--main-background);
-        padding: 3rem 5rem 100rem 10rem;
+        padding: 3rem 5rem 100rem 100rem;
         z-index: 1005;
         box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
     }
